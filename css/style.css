@@ -1,0 +1,117 @@
+/* Root */
+:root {
+    --white: rgb(255 255 255);
+    --black: rgb(0 0 0);
+
+    --gray-50: rgb(248 250 252);
+    --gray-100: rgb(241 245 249);
+    --gray-500: rgb(100 116 139);
+    --gray-600: rgb(71 85 105);
+    --gray-700: rgb(51 65 85);
+    --gray-800: rgb(30 41 59);
+
+    --indigo-50: rgb(238 242 255);
+    --indigo-100: rgb(224 231 255);
+    --indigo-200: rgb(199 210 254);
+    --indigo-300: rgb(165 180 252);
+    --indigo-400: rgb(129 140 248);
+    --indigo-500: rgb(99 102 241);
+    --indigo-600: rgb(79 70 229);
+    --indigo-700: rgb(67 56 202);
+
+    --red-700: rgb(185 28 28);
+    --red-800: rgb(153 27 27);
+    --red-900: rgb(127 29 29);
+}
+
+/* Resets and base */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: normal;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--gray-50);
+    color: var(--gray-800);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+input:focus {
+    outline: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+button {
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Canvas */
+
+canvas {
+    background-color: var(--black);
+    background-image: url('../img/bg.png');
+    background-repeat: repeat-y;
+    animation: animatedBackground 60s linear infinite;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 50% 100%;
+    }
+
+    to {
+        background-position: 50% 0;
+    }
+}
